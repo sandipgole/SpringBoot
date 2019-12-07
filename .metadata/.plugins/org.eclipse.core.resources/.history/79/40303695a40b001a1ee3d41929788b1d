@@ -1,0 +1,9 @@
+package com.example.demo;
+
+public class gole {
+	private int aid;
+	private String aname;
+	private int tech;
+	
+
+}

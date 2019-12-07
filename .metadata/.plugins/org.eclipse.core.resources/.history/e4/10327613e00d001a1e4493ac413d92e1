@@ -1,0 +1,33 @@
+package com.example.demo;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+
+
+@Controller
+public class AlienController
+{	@Autowired
+	AlienRepo repo;
+	
+	@RequestMapping("/index")
+	public String home(AlienModel alien)
+	{
+		return "index.jsp";
+	}
+	@RequestMapping("/addAlien")
+	public String addAlien(AlienModel alien)
+	{
+		repo.save(alien);
+		return "index.jsp";
+	}
+	@RequestMapping("/getAlien")
+	public String addAlien(AlienModel alien)
+	{
+		repo.save(alien);
+		return "index.jsp";
+	}
+
+
+}

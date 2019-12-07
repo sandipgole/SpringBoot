@@ -1,0 +1,28 @@
+package com.example.demo.Controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.example.demo.model.Alien;
+import com.example.demo.repo.AlienRepo;
+
+@Controller
+public class AlienController {
+	
+	AlienRepo repo;
+	
+	
+	
+	
+	@RequestMapping("home")
+	public String home()
+	{
+		return "home.jsp";
+	}
+	@RequestMapping("addAlien")
+	public String addAlien(Alien alien)
+	{
+		return "home.jsp";
+	}
+
+}

@@ -1,0 +1,9 @@
+package com.example.demo;
+
+public class HomeController {
+	public String Home()
+	{
+		return"Home";
+	}
+
+}
